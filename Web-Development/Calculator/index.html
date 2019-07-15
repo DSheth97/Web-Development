@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <table class="border shadow p-3 mb-5 bg-white rounded">
+    <tr>
+        <tr>
+            <td class="border heading">
+                Calculator by Dhruvil
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="input" type="text" placeholder="0" readonly="readonly">
+                <input id="answer" type="text" readonly="readonly" >
+            </td>
+        </tr>
+            <tr>
+                <td>
+                        <input type="button" id="CE" class="btn btn-default btn-outline-light" value="CE" onclick="clearScreen()">
+                        <input type="button" id="operator" class="btn btn-outline-light operator" value="*" onclick="getOperand('*')">
+                        <input type="button" id="operator" class="btn btn-outline-light operator" value="/" onclick="getOperand('/')">
+                        <input type="button" id="operator" class="btn btn-outline-light operator" value="BCKSP" onclick="backspace()">
+                        <br>
+
+            
+                        <input type="button" class="btn btn-outline-light" value="7" onclick="getElement(7)">
+                        <input type="button" class="btn btn-outline-light" value="8" onclick="getElement(8)">
+                        <input type="button"  class="btn btn-outline-light" value="9" onclick="getElement(9)">
+                        <input type="button"  id="operator" class="btn btn-outline-light operator" value="-" onclick="getOperand('-')">
+
+                        <br>
+
+                        <input type="button" class="btn btn-outline-light" value="4" onclick="getElement(4)">
+                        <input type="button" class="btn btn-outline-light" value="5" onclick="getElement(5)">
+                        <input type="button" class="btn btn-outline-light" value="6" onclick="getElement(6)">
+                        <input type="button" class="btn btn-outline-light operator" id="operator" value="+" onclick="getOperand('+')">
+        
+                        <br>
+
+                            <input type="button" class="btn btn-outline-light" value="1" onclick="getElement(1)">
+                            <input type="button" class="btn btn-outline-light" value="2" onclick="getElement(2)">
+                            <input type="button" class="btn btn-outline-light"  value="3" onclick="getElement(3)">
+                            <input type="button"  id="operator" class="btn btn-outline-light operator" value="+/-" onclick="getOperand('+/-')">
+            
+                        <br>
+
+                                <input type="button" class="btn btn-outline-light" value="0" onclick="getElement(0)">
+                                <input type="button" class="btn btn-outline-light" value="." onclick="getOperand('.')">
+                                <input type="button" class="btn btn-outline-light" id="Equal" value="=" onclick="compute()">
+                
+                    </td>
+            </tr>
+
+    </tr>
+
+    </table>
+   
+</div>
+</body>
+</html>
